@@ -1,9 +1,8 @@
 var myButton = document.getElementById("click-me");
-myButton.addEventListener("click", onButtonCLick);
-
 var messageInput = document.getElementById('message');
-
 var state = false;
+
+myButton.addEventListener("click", onButtonCLick);
 
 function onButtonCLick(eventObj) {
 	state = !state;
@@ -18,9 +17,9 @@ function onButtonCLick(eventObj) {
 
 }
 
+///////////////////////////////////////////////////
 
 var input = document.getElementById("message");
-
 var messageList = document.getElementById("message-list");
 
 input.addEventListener("keyup", appendMessage);
@@ -34,9 +33,7 @@ function appendMessage(event) {
 }
 
 
-
-
-	console.log('');
+console.log('');
 
 var myButton = document.getElementById("click-me");
 
@@ -44,8 +41,31 @@ console.log(myButton);
 
 myButton.addEventListener("click", onButtonCLick);
 
-var parent =document.getElementById("parent");
+var parent = document.getElementById("parent");
 parent.addEventListener("click", onButtonCLick);
 
 
 document.getElementById("click-me").innerHTML = 'changed text';
+
+
+var todoList = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
