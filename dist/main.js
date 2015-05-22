@@ -19,6 +19,7 @@ function onButtonCLick(eventObj) {
 
 ///////////////////////////////////////////////////
 
+
 var input = document.getElementById("message");
 var messageList = document.getElementById("message-list");
 
@@ -34,15 +35,6 @@ function appendMessage(event) {
 
 
 console.log('');
-
-var myButton = document.getElementById("click-me");
-
-console.log(myButton);
-
-myButton.addEventListener("click", onButtonCLick);
-
-var parent = document.getElementById("parent");
-parent.addEventListener("click", onButtonCLick);
 
 
 document.getElementById("click-me").innerHTML = 'changed text';
