@@ -20,15 +20,14 @@ function onButtonClick() {
 ///////////////////////////////////////////////////
 
 
-var input = document.getElementById("todoInput");
 var todoList = document.getElementById("todo-list");
 
-input.addEventListener("keyup", appendMessage);
+messageInput.addEventListener("keyup", appendMessage);
 
 function appendMessage() {
 	if(event.keyCode === 13) {
-	todoList.innerHTML += "<div>" + input.value + "</div>";
-	input.value = "";
+		todoList.innerHTML += "<div>" + messageInput.value + "</div>";
+		messageInput.value = "";
 	}
 }
 
