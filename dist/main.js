@@ -1,16 +1,16 @@
-var myButton = document.getElementById("click-me");
+var myButton = document.getElementById("Save");
 var messageInput = document.getElementById('message');
 var state = false;
 
-myButton.addEventListener("click", onButtonCLick);
+myButton.addEventListener("click", onButtonClick);
 
-function onButtonCLick(eventObj) {
+function onButtonClick(eventObj) {
 	state = !state;
 	if(state) {
-		myButton.innerHTML = 'click my button';
+		myButton.innerHTML = 'Save Item';
 	}
 	else {
-		myButton.innerHTML = 'thanks for clicking';
+		myButton.innerHTML = 'Item Saved!';
 	}
 
 	messageInput.innerHTML = '<div>' + messageInput.value + '</div>';	
@@ -20,15 +20,15 @@ function onButtonCLick(eventObj) {
 ///////////////////////////////////////////////////
 
 
-var input = document.getElementById("message");
-var messageList = document.getElementById("message-list");
+var input = document.getElementById("todoInput");
+var todoList = document.getElementById("todo-list");
 
 input.addEventListener("keyup", appendMessage);
 
 function appendMessage(event) {
 	console.log(event);
 	if(event.keyCode === 13) {
-	messageList.innerHTML = "<div>" + input.value + "</div>";
+	todoList.innerHTML += "<div>" + input.value + "</div>";
 	input.value = "";
 	}
 }
@@ -37,10 +37,7 @@ function appendMessage(event) {
 console.log('');
 
 
-document.getElementById("click-me").innerHTML = 'changed text';
-
-
-var todoList = [];
+// var todoList = [];
 
 
 
