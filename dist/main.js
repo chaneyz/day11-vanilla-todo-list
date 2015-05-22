@@ -1,5 +1,5 @@
 var saveButton = document.getElementById("save");
-var messageInput = document.getElementById('todoInput');
+var messageInput = document.getElementById('todo-input');
 var state = false;
 
 saveButton.addEventListener("click", onButtonClick);
