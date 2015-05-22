@@ -1,4 +1,4 @@
-var saveButton = document.getElementById("Save");
+var saveButton = document.getElementById("save");
 var messageInput = document.getElementById('todoInput');
 var state = false;
 
@@ -13,7 +13,7 @@ function onButtonClick() {
 		saveButton.innerHTML = 'Item Saved!';
 	}
 
-	messageInput.innerHTML = '<div>' + messageInput.value + '</div>';	
+	messageInput.innerHTML = '<div>' + messageInput.value + '</div>';
 
 }
 
