@@ -1,5 +1,5 @@
 var myButton = document.getElementById("Save");
-var messageInput = document.getElementById('message');
+var messageInput = document.getElementById('todoInput');
 var state = false;
 
 myButton.addEventListener("click", onButtonClick);
@@ -36,8 +36,6 @@ function appendMessage(event) {
 
 console.log('');
 
-
-// var todoList = [];
 
 
 
