@@ -1,5 +1,5 @@
-var saveButton = document.getElementById("Save");
-var messageInput = document.getElementById('todoInput');
+var saveButton = document.getElementById("save");
+var messageInput = document.getElementById('todo-input');
 var state = false;
 
 saveButton.addEventListener("click", onButtonClick);
@@ -13,22 +13,21 @@ function onButtonClick() {
 		saveButton.innerHTML = 'Item Saved!';
 	}
 
-	messageInput.innerHTML = '<div>' + messageInput.value + '</div>';	
+	messageInput.innerHTML = '<div>' + messageInput.value + '</div>';
 
 }
 
 ///////////////////////////////////////////////////
 
 
-var input = document.getElementById("todoInput");
 var todoList = document.getElementById("todo-list");
 
-input.addEventListener("keyup", appendMessage);
+messageInput.addEventListener("keyup", appendMessage);
 
 function appendMessage() {
 	if(event.keyCode === 13) {
-	todoList.innerHTML += "<div>" + input.value + "</div>";
-	input.value = "";
+		todoList.innerHTML += "<div>" + messageInput.value + "</div>";
+		messageInput.value = "";
 	}
 }
 
@@ -40,7 +39,7 @@ var todos = [];
 var messageBox  = document.getElementById("todo-list");
 
 function clearAndShow() {
-	todoInput.value = "";
+	messageInput.value = "";
   	messageBox.innerHTML = "";
   	messageBox.innerHTML += "Todos: " + todos.join(", ") + "<br/>";
 }
