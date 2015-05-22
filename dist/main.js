@@ -39,7 +39,7 @@ var todos = [];
 var messageBox  = document.getElementById("todo-list");
 
 function clearAndShow() {
-	todoInput.value = "";
+	messageInput.value = "";
   	messageBox.innerHTML = "";
   	messageBox.innerHTML += "Todos: " + todos.join(", ") + "<br/>";
 }
